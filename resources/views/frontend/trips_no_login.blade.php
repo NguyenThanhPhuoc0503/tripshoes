@@ -14,7 +14,7 @@
 					<div class="pull-left">
 						<div class="link">
 							<a href="{{ asset('/trip') }}">{{ trans('lang_user.header.trips') }}</a>
-							<a href="{{ asset('/blog') }}" class="padding_left_10">{{ trans('lang_user.header.blog') }}</a>	
+							<a href="{{ asset('/blog') }}" class="padding_left_10">{{ trans('lang_user.header.blog') }}</a>
 						</div>
 					</div>
 					@if(!Auth::check())
@@ -52,11 +52,11 @@
 				        	</div>
 				        	</div>
 				        	<div class="clearfix"></div>
-				        	<input type="submit" value="Sign In" class="btn btn-lg btn-success btn_login"> 
+				        	<input type="submit" value="Sign In" class="btn btn-lg btn-success btn_login">
 				        </form>
 				        <a href="{{ url('/sendusemail') }}">{{ trans('lang_user.header.access_code') }}</a>
 				      </div>
-				      
+
 				    </div>
 				  </div>
 				</div>
@@ -71,16 +71,16 @@
 					      <div class="modal-body">
 					       	<form method="POST" action="{{ url('/postResetPassword') }}" id="formResetPassword">
 					       		{{ csrf_field() }}
-					       		<div class="form-group"> 
+					       		<div class="form-group">
 					        		<input type="password" class="form-control form_padding" placeholder="Password" name="password" id="password">
 					        	</div>
 					        	<div class="form-group">
-					        		<input type="password" class="form-control form_padding" placeholder="Confirm password" name="confirm_password" id="confirm_password"> 
+					        		<input type="password" class="form-control form_padding" placeholder="Confirm password" name="confirm_password" id="confirm_password">
 					        	</div>
-					        	<input type="submit" value="Submit" class="btn btn-lg btn-success btn_login"> 
+					        	<input type="submit" value="Submit" class="btn btn-lg btn-success btn_login">
 					       	</form>
 					      </div>
-					      
+
 					    </div>
 					  </div>
 					</div>
@@ -91,7 +91,7 @@
 					    <form action="{{ url('/sendEmailChangePassword') }}" method="POST" id="formresetpassword">
 						      <div class="modal-body modal_login">
 						        <p>{{ trans('lang_user.header.email_reset') }}</p>
-						        
+
 						        	<div class="form-group">
 						        		<input type="text" class="form-control form_padding" name="email" id="email" placeholder="Email">
 						        	</div>
@@ -104,7 +104,7 @@
 
 						      </div>
 					      </form>
-				      
+
 				    </div>
 				  </div>
 				</div>
@@ -146,10 +146,10 @@
 				        	<div class="form-group">
 				        		<input type="text" class="form-control form_padding" placeholder="Access Code" name="code" id="code">
 				        	</div>
-				        	<input type="submit" value="Get me access" class="btn btn-lg btn-success btn_login"> 
+				        	<input type="submit" value="Get me access" class="btn btn-lg btn-success btn_login">
 				       	</form>
 				      </div>
-				      
+
 				    </div>
 				  </div>
 				</div>
@@ -184,10 +184,10 @@
 				        	<div class="form-group">
 				        		<input type="text" class="form-control form_padding" placeholder="Access Code" name="code" id="code">
 				        	</div>
-				        	<input type="submit" value="Get me access" class="btn btn-lg btn-success btn_login"> 
+				        	<input type="submit" value="Get me access" class="btn btn-lg btn-success btn_login">
 				       	</form>
 				      </div>
-				      
+
 				    </div>
 				  </div>
 				</div>
@@ -207,7 +207,7 @@
 									<div class="ava-info" style="background: url({{ asset(config('path.profile_default').Auth::user()->avatar) }})" class="img-circle img-responsive"></div>
 								@endif
 							</a>
-							
+
 							<ul class="dropdown-menu pull-right with-arrow panel panel-default littleFadeInUp" role="menu">
 
 				                <li>
@@ -227,12 +227,12 @@
 				                </li>
 
 				            </ul>
-							
+
 						</li>
 					</ul>
 				</div>
 				@endif
-					
+
 				</div>
 				<div class="text-center webname">
 					<a href="{{ url('/') }}"><img src="{{ asset('frontend/images/Group3.png') }}"></a>
@@ -244,11 +244,11 @@
 					<h1>{{ trans('lang_user.header.contact') }}<br> {{ trans('lang_user.header.contact_1') }}</h1>
 					<a href="" class="btn btn-lg">{{ trans('lang_user.header.button') }}</a>
 				</div>
-			
+
 
 		</div>
 			<div id="content">
-				<div class="container">					
+				<div class="container">
 					<div class="row">
 						@foreach($tourlist as $item)
 						<div class="col-lg-6 my_booking">
@@ -296,7 +296,7 @@
 		                        <input type="email" class="form-control form_padding input-lg" name="email" placeholder="Which country are you from?">
 		                    </div>
 		                   </div>
-		                 </div> 
+		                 </div>
 		                 <div class="row">
 		                  <div class="col-lg-12">
 		                   <div class="form-group">

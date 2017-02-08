@@ -30,12 +30,12 @@ return [
         'password_pattern' => '.{6,100}',
         'password_notice' => 'Password must 6-100 characters',
         'password' => 'Password',
-        'username' => 'Username',        
+        'username' => 'Username',
     ],
 'header' => [
         'trips' => 'Trips',
-        'trip'  => 'trip',
-        'shoes' => 'shoes',
+        'trip'  => 'growth',
+        'shoes' => 'trip',
         'blog' => 'Blog',
         'sign_in' => 'Sign In',
         'cart' => 'Cart',
@@ -56,12 +56,12 @@ return [
 
     ],
 'footer' => [
-        'trip' => 'trip',
-        'shoes' => 'shoes',
+        'trip' => 'growth',
+        'shoes' => 'trip',
         'about' => 'About',
         'contact' => 'Contact',
         'support' => 'Support',
-        'copy_right' => '© 2016 TripShoes Pty Ltd. All rights reserved.',
+        'copy_right' => '© 2016 Growthtrip. All rights reserved.',
     ],
 'booking' => [
         'past_booking' => 'Past Bookings',
@@ -74,9 +74,9 @@ return [
         'your_host' => 'Your Host',
         'reviews' => 'Reviews',
         'starting_location' => 'Starting Location',
-        'back_to_trips' => 'Back to Trips',
+        'back_to_trips' => 'Back to Packages',
         'add_to_cart' => 'Add to cart',
-        'add_promo_code' => 'Add promo code',
+        'add_promo_code' => 'Enquire Now',
         'enquire_now' => 'Enquire Now',
         'promo_code' => 'Promo Code',
         'close' => 'Close',
@@ -122,7 +122,7 @@ return [
         'save_changes' => 'Save Changes',
     ],
 'blog' => [
-        'blog_header' => 'Welcome to the TripShoes Blog',
+        'blog_header' => 'Welcome to the Growthtrip Blog',
 
     ],
 'send_us' => [
@@ -133,39 +133,72 @@ return [
         'info' => 'info@tripshoes.com',
     ],
 'index' => [
-        'content' => 'Every trips designed by someone who lives and breathes the cultures',
-        'content_1' => "TripShoes offers daily guided trips in Hoi An. Each trip allows you the chance to experience a culture in someone else's shoes. Because each trip has been created in partnership with someone who has a special bond with the location, every tour takes place on a specially designed route filled with personal stories and experiences that only someone who lives, loves and breathes the area will be able to share.",
-        'content_2' => 'An Empathetic Experience',
-        'content_3' => "The end result is an empathetic experience that allows you to truly step into someone's else shoes.",
-        'content_4' => 'With Simple Booking',
-        'content_5' => 'All you need to do is download the TripShoes app onto your phone, and book a trip online or in-app.',
-        'content_6' => 'So the Journey Begins',
-        'content_7' => 'Be at your starting location at the designated time, pop your headphones in your ear... and away you go.',
-        'content_8' => "In order to truly allow you to step into someone's else shoes, Tripshoes has built a remarkably clever app to ensure that you won't miss a single beat of your journey.",
-        'content_9' => 'A Remarkable App',
-        'content_10' => "By logging into the TripShoes app, you'll have a live travel professional with proficient English skills in your ear every step of the way.",
-        'content_11' => "You'll also have an interactive map to show you where you are at any given moment.",
-        'content_12' => "Built with the latest technology including state-of-the-art audio, the TripShoes app ensures that you'll never be standing at the back of a pack of travellers wondering 'what on earth did my guide just say' ever again.",
-        'content_13' => 'A Photobook of Memories',
-        'content_14' => "&nbsp;&nbsp;During your trip you'll be able to take photos with a single tap and send messages instantly to the rest of your group without having to leave the app at anytime. With the ability to upload photos, group chat and send instant  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;messages to your fellow travellers in Photobook - every image, comment, or emoji is now saved forever.",
-        'content_15' => 'A new form of giving',
-        'content_16' => "Every booking undertaken on TripShoes sees a donation made to assist the under privileged living in Vietnam. TripShoes is associated with a host of charities and education centres across Vietnam an Australia and you'll be pleased to know you'll be 'giving with every foottep indertaken on each trip.'",
+        'content' => 'Innovation? Resilience? Leadership?',
+        'content1' => 'What does your company need to grow?',
+        'content_1' => "Growthtrip offers all-inclusive conference packages designed to help your organisation grow. We believe every
+                        company deserves a break overseas, but why not combine the trip with an incredible learning opportunity?
+                        Growthtrip's conference packages are designed around specific themes such as resilience, innovation or leadership. It's
+                        time to say goodbye to \"overseas junkets\", say hello to an incredible learning opportunity designed for growth.",
+        'content_2' => 'All-inclusive packages',
+        'content_3' => "We take care of everything from A - Z, so your event is stress -free.",
+        'content_4' => 'World -class facilitators',
+        'content_5' => 'We team up with some of the world\'s most experienced facilitators who are experts in their fields.',
+        'content_6' => 'Tailored locations',
+        'content_7' => 'Every package includes excursions tailored to inspire and motivate your team or',
+        'content_8' => "\"Live as if you were to die tomorrow. Learn as if you were",
+        'content_8_1' => "to live forever.\"",
+        'content_8_2' => '- Mahatma Gandhi',
+        'content_9' => 'All-inclusive packages',
+        'content_10' => "With the inclusion of exceptional conference
+                          facilitators or speakers in every package,
+                          Growthtrip ensures that your conference will not
+                          just be enjoyable, it will be productive.",
+        'content_11' => "Furthermore, our packages are all-inclusive.
+                          This means that once your booking is confirmed
+                          we'll take care of everything from flights, five
+                          star accommodation, venue hire, facilitators
+                          and/or speakers.",
+        'content_12' => "Packages will also include visits to local sites
+                          designed to immerse your group into the local View Sample
+                          culture whilst engaging with your growth theme.",
+        'content_13' => 'A team you can trust',
+        'content_14' => "Whilst we're a new startup, Growthtrip's team has had years of experience in conference organisation and event
+                            planning. At Growthtrip, we speak the local language and understand the culture like no other, we've had years of
+                            experience in event planning and engagement with speakers, and we've got partnerships both on -the -ground in
+                            Asia and in Australia with facilitators, speakers and venues.",
+        'content_14_1' => 'From the day you consider booking until the moment the last delegate leaves, we\'ll provide you with a specialised
+                            concierge service to assist you in realising the best conference possible. Read more about our team here.',
+        'content_15' => 'One for One',
+        'content_16' => "At Growthtrip we believe in the philosophy of
+                          one -for -one. We believe there's no reason why
+                          you can't combine travel with giving back.
+                          Therefore our conference packages include an
+                          optional component of volunteering whereby
+                          travellers are given the opportunity to give back.",
+        'content_16_1' => 'This might involve visiting a local school to help
+                          the students with their English for half a day or
+                          visiting a local orphanage to teach the children
+                          literacy. We believe that in a world based on
+                          one -for -one, everybody wins.',
         'content_17' => 'How to Book',
         'content_18' => 'Booking is as easy as 1,2,3',
-        'content_19' => 'Download the TripShoes app',
-        'content_20' => 'TripShoes is currently only available on iphone. Simply download the secure TripShoes app onto your iphone on the App Store',
-        'content_21' => 'Book a trip in-app or on the website',
-        'content_22' => 'Payments can be made via Paypal or credit card. All trips offer incredible value.',
-        'content_23' => 'Meet at the Starting Location',
-        'content_24' => "Arrive ad your starting locaition 5 minutes before your trip begins, log into your app, tap on Tour Mode and you're all ser. TripShoes will handle the rest.",
+        'content_19' => 'Contact us today',
+        'content_20' => 'Fill out the form below and let us know how many delegates you\'d like to travel and when.',
+        'content_21' => 'Select additional options',
+        'content_22' => 'Select your facilitator and/or speakers and we\'ll send you a detailed quote within 3 days.',
+        'content_23' => 'Easy Booking',
+        'content_24' => "When you're satisfied with your package, make a deposit and your booking is confirmed. We'll handle the rest.",
         'content_25' => 'Launch',
-        'content_26' => 'Soft launch in Hoi An October 2016',
-        'content_27' => "TripShoes is soft launching in Hoi An in October 2016. If you're in Hoi An in late 2016, registe now for ealy access and be amongst the first to experience one of our unique trips. Trips in this period will be heavily discounted so register quickly for early access trips.",
-        'content_28' => 'Get early access',
+        'content_26' => 'Launching in Vietnam in 2017',
+        'content_27' => "Growthtrip is launching in Vietnam in 2017, with conference packages designed within the stunning country.
+                          If you haven't had a chance to visit Vietnam, do it now. You won't be disappointed. Whether you're looking to
+                          grow innovation, leadership, resilience or sales in your company, now is the time.",
+        'content_28' => 'Enquire now',
         'content_29' => 'When will you be in Hoi An?',
         'content_30' => 'Which trip are you most interested in?',
+        'content_31' => 'Enquire',
         'reset_password' => 'Reset Password',
-        'end' => 'Get me early access',
+        'end' => 'Send enquiry',
     ],
 'trip' => [
         'trip2_header' => 'Traveller Number1',
@@ -187,6 +220,6 @@ return [
         'cVV_code' => 'CVV Code ?',
         'name_on_card' => 'Name on Card',
         'return_to_detail' => 'Return to Detail',
-        'complete_order' => 'Complete Order', 
+        'complete_order' => 'Complete Order',
     ],
 ];

@@ -13,7 +13,7 @@
 				</a>
 				<div class="blog_text">
 				<h3>{{ $item->name }}</h3>
-				<p>{{ $item->about }}</p>
+				<p>{{ substr($item->about, 0,150) }}{{ strlen($item->about)>150 ? " ..." : ""}}</p>
 				</div>
 			</div>
 			@endforeach
@@ -23,4 +23,3 @@
 </div>
 </div>
 @endsection
-		

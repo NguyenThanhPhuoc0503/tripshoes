@@ -13,18 +13,18 @@ use App\Models\EmailTemp;
 class HomeController extends Controller
 {
     public function index(){
-    	$banner = '/frontend/images/Depositphotos_53914195_original.jpg';
-		$text_banner = 
+    	$banner = '/frontend/images/Image1.png';
+		$text_banner =
 		'<div class="banner-header">
 			<h4>Daily Guided Trips in Hoi An</h4>
 			<h1>Take a trip in <br> someone else\'s shoes</h1>
-			<a href="#form_send" class="btn btn-lg btn-success page-scroll">Get early access</a>
+			<a href="#form_send" class="btn btn-lg btn-success page-scroll">Enquire now</a>
 		</div>';
 		/*Mail::send('frontend.sendemail', ['user' => 'hello'], function ($m) {
 
             $m->to('luongviet82@gmail.com', 'Luong Viet')->subject('Your Reminder!');
         });*/
-        
+
 	    return view('frontend.index', compact('banner', 'text_banner'));
     }
 
@@ -78,7 +78,7 @@ class HomeController extends Controller
             $findEmail->access_code = $access_code;
             $findEmail->save();
         }
-        
+
 
         Mail::send('frontend.sendemail', ['access_code' => $access_code, 'message' => $message], function ($m) use ($email, $yourname){
 
@@ -92,7 +92,7 @@ class HomeController extends Controller
 
     public function signup(){
     	$banner = '/frontend/images/Depositphotos_53914195_original.jpg';
-		$text_banner = 
+		$text_banner =
 		'<div class="banner-header">
 			<h4>Daily Guided Trips in Hoi An</h4>
 			<h1>Take a trip in <br> someone else\'s shoes</h1>

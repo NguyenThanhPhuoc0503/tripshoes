@@ -5,7 +5,7 @@
 			<div class="pull-left">
 				<div class="link">
 					<a href="{{ asset('/trip') }}">{{ trans('lang_user.header.trips') }}</a>
-					<a href="{{ asset('/blog') }}" class="padding_left_10">{{ trans('lang_user.header.blog') }}</a>	
+					<a href="{{ asset('/blog') }}" class="padding_left_10">{{ trans('lang_user.header.blog') }}</a>
 				</div>
 			</div>
 			@if(!Auth::check())
@@ -57,11 +57,11 @@
 				        	</div>
 				        	</div>
 				        	<div class="clearfix"></div>
-				        	<input type="submit" value="Sign In" class="btn btn-lg btn-success btn_login"> 
+				        	<input type="submit" value="Sign In" class="btn btn-lg btn-success btn_login">
 				        </form>
 				        <a href="{{ url('/sendusemail') }}">{{ trans('lang_user.header.access_code') }}</a>
 				      </div>
-				      
+
 				    </div>
 				  </div>
 				</div>
@@ -76,22 +76,22 @@
 					      <div class="modal-body">
 					       	<form method="POST" action="{{ url('/postResetPassword') }}" id="formResetPassword">
 					       		{{ csrf_field() }}
-					       		<div class="form-group"> 
+					       		<div class="form-group">
 					        		<input type="text" class="form-control form_padding" placeholder="Email" name="email" id="email">
 					        	</div>
-					        	<div class="form-group"> 
+					        	<div class="form-group">
 					        		<input type="text" class="form-control form_padding" placeholder="Access Code" name="access_code" id="access_code">
 					        	</div>
-					       		<div class="form-group"> 
+					       		<div class="form-group">
 					        		<input type="password" class="form-control form_padding" placeholder="Password" name="password" id="password">
 					        	</div>
 					        	<div class="form-group">
-					        		<input type="password" class="form-control form_padding" placeholder="Confirm password" name="confirm_password" id="confirm_password"> 
+					        		<input type="password" class="form-control form_padding" placeholder="Confirm password" name="confirm_password" id="confirm_password">
 					        	</div>
-					        	<input type="submit" value="Submit" class="btn btn-lg btn-success btn_login"> 
+					        	<input type="submit" value="Submit" class="btn btn-lg btn-success btn_login">
 					       	</form>
 					      </div>
-					      
+
 					    </div>
 					  </div>
 					</div>
@@ -102,7 +102,7 @@
 					    <form action="{{ url('/sendEmailChangePassword') }}" method="POST" id="formresetpassword">
 						      <div class="modal-body modal_login">
 						        <p>{{ trans('lang_user.header.email_reset') }}</p>
-						        
+
 						        	<div class="form-group">
 						        		<input type="text" class="form-control form_padding" name="email" id="email" placeholder="Email">
 						        	</div>
@@ -115,43 +115,7 @@
 
 						      </div>
 					      </form>
-				      
-				    </div>
-				  </div>
-				</div>				
-				<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				        <h4 class="modal-title" id="myModalLabel">{{ trans('lang_user.header.access_code_send') }}</h4>
-				      </div>
-				      <div class="modal-body">
-				       	<form method="POST" action="{{ url('/postRegister') }}" id="signupform">
-				       		{{ csrf_field() }}
-				       		<span class="errors hidden"></span>
-				       		<div class="form-group">
-				        		<input type="text" class="form-control form_padding" placeholder="Name" name="name" id="name">
-				        	</div>
-				        	<div class="form-group">
-				        		<input type="text" class="form-control form_padding" placeholder="Email" name="email" id="email">
-				        	</div>
-				        	<div class="form-group">
-				        		<input type="password" class="form-control form_padding" placeholder="Password" name="password" id="password">
-				        	</div>
-				        	<div class="form-group">
-				        		<input type="number" class="form-control form_padding" placeholder="Age" name="age" id="age">
-				        	</div>
-				        	<div class="form-group">
-				        		<input type="text" class="form-control form_padding" placeholder="Country of Residence" name="country" id="country">
-				        	</div>
-				        	<div class="form-group">
-				        		<input type="text" class="form-control form_padding" placeholder="Access Code" name="code" id="code">
-				        	</div>
-				        	<input type="submit" value="Get me access" class="btn btn-lg btn-success btn_login"> 
-				       	</form>
-				      </div>
-				      
+
 				    </div>
 				  </div>
 				</div>
@@ -184,14 +148,50 @@
 				        	<div class="form-group">
 				        		<input type="text" class="form-control form_padding" placeholder="Access Code" name="code" id="code">
 				        	</div>
-				        	<input type="submit" value="Get me access" class="btn btn-lg btn-success btn_login"> 
+				        	<input type="submit" value="Get me access" class="btn btn-lg btn-success btn_login">
 				       	</form>
 				      </div>
-				      
+
 				    </div>
 				  </div>
 				</div>
-				
+				<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel">{{ trans('lang_user.header.access_code_send') }}</h4>
+				      </div>
+				      <div class="modal-body">
+				       	<form method="POST" action="{{ url('/postRegister') }}" id="signupform">
+				       		{{ csrf_field() }}
+				       		<span class="errors hidden"></span>
+				       		<div class="form-group">
+				        		<input type="text" class="form-control form_padding" placeholder="Name" name="name" id="name">
+				        	</div>
+				        	<div class="form-group">
+				        		<input type="text" class="form-control form_padding" placeholder="Email" name="email" id="email">
+				        	</div>
+				        	<div class="form-group">
+				        		<input type="password" class="form-control form_padding" placeholder="Password" name="password" id="password">
+				        	</div>
+				        	<div class="form-group">
+				        		<input type="number" class="form-control form_padding" placeholder="Age" name="age" id="age">
+				        	</div>
+				        	<div class="form-group">
+				        		<input type="text" class="form-control form_padding" placeholder="Country of Residence" name="country" id="country">
+				        	</div>
+				        	<div class="form-group">
+				        		<input type="text" class="form-control form_padding" placeholder="Access Code" name="code" id="code">
+				        	</div>
+				        	<input type="submit" value="Get me access" class="btn btn-lg btn-success btn_login">
+				       	</form>
+				      </div>
+
+				    </div>
+				  </div>
+				</div>
+
 
 
 				@else
@@ -209,7 +209,7 @@
 									<div class="ava-info" style="background: url({{ asset(config('path.profile_default')) }});background-size: cover;" class="img-circle img-responsive"></div>
 								@endif
 							</a>
-							
+
 							<ul class="dropdown-menu pull-right with-arrow panel panel-default littleFadeInUp" role="menu">
 
 				                <li>
@@ -229,19 +229,19 @@
 				                </li>
 
 				            </ul>
-							
+
 						</li>
-						
+
 					</ul>
-					
+
 				</div>
 
 				@endif
-			
+
 				</div>
 				<div class="text-center webname">
 					<a href="{{ url('/') }}" style="color:#fff;"><img src="{{ asset('frontend/images/Group3.png') }}">&nbsp;{{ trans('lang_user.header.trip') }}<span>{{ trans('lang_user.header.shoes') }}</span></a>
-					
+
 				</div>
 				{!! $text_banner !!}
 	</div>

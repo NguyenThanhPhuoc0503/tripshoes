@@ -9,7 +9,7 @@
 			<p><a href="{{ asset('/trip') }}"><i class="fa fa-chevron-left"></a></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ trans('lang_user.booking.back_to_trips') }}</p>
 		</div>
 
-		
+
 			<div class="walking">
 				<div class="row">
 				<div class="col-md-5">
@@ -39,10 +39,10 @@
 					  		{{--<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q={{$tour->lat}},{{$tour->lng}}&amp;key=AIzaSyDPMvvFFuqTMQHcqtSbSyTVuwBE7c52GB0"></iframe>--}}
 					  	</p>
 					  </div>
-					</div>				
+					</div>
 				</div>
 				<div class="col-md-7" style="height:420px;">
-						<div class="col-md-8">	
+						<div class="col-md-8">
 							<img src="{{ asset('upload/images/'.$image['url'].'') }}" class="img-round" width="100%" height="420px;">
 						</div>
 						<div class="col-md-3" style="height:420px;margin-left:50px;">
@@ -50,7 +50,7 @@
 								<img src="{{ asset('upload/images/'.$item->url.'') }}" class="img-round" width="75%" height="23%" style="margin-bottom: 10px;">
 							@endforeach
 						</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 			<div class="row select_content">
 				<div class="col-md-3">
 					<div class="input-append date" data-date="Select Date">
-					  <input class="form-control form_padding" id="datepciker" size="16" type="text" value="Select Date" name="date_booking">
+					  <input class="form-control form_padding" id="datepciker" size="16" type="text" value="Select Date of Conferentce" name="date_booking">
 					  <span class="add-on"><i class="icon-th"></i></span>
 					</div>
 				</div>
@@ -83,7 +83,7 @@
 					</select>
 				</div>
 			</div>
-		
+
 		<span>${{number_format((float)$tour->price, 2, '.', '')}}</span>
 		<input type="hidden" name="price" value="{{number_format((float)$tour->price, 2, '.', '')}}">
 		<input type="hidden" name="promo_id" id="promo_id">
@@ -94,8 +94,7 @@
 		</div>
 		@else
 		<div class="button_end">
-			<a href="#" class="btn btn-lg btn-danger">{{ trans('lang_user.booking.add_promo_code') }}</a>
-			<a href="#" class="btn btn-lg btn-default" data-toggle="modal" data-target="#promo_code">{{ trans('lang_user.booking.enquire_now') }}</a>
+			<a href="#" class="btn btn-lg btn-warning">{{ trans('lang_user.booking.add_promo_code') }}</a>
 		</div>
 		@endif
 		</form>
